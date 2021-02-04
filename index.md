@@ -1,6 +1,6 @@
 ---
-title: Title
-layout: layout.liquid
+title: Home
+layout: root.liquid
 ---
 
 ## Projects

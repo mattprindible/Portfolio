@@ -1,6 +1,6 @@
 ---
 title: Footer
-layout: layout.liquid
+layout: root.liquid
 ---
 
 Hmm...
