@@ -12,3 +12,8 @@ layout: layout.liquid
 {% for writing in collections.writing %}
 - [{{ writing.data.title }}]({{ writing.url }})
 {% endfor %}
+
+## External Data
+{% for sample in samples %}
+- {{ sample.type }}, {{ sample.size }}
+{% endfor %}

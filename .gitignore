@@ -105,3 +105,7 @@ dist
 
 # Eleventy
 _site/
+
+#etc
+.DS_Store
+.vscode

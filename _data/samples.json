@@ -1,0 +1,5 @@
+[
+    {"type": "Rectangle", "size": 4},
+    {"type": "Square", "size": 2},
+    {"type": "Circle", "size": 10}
+]
