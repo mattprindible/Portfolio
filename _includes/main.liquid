@@ -7,10 +7,14 @@
     </head>
     
     <body>
-        <header>
-            <a href="/">Matt Prindible</a>
-            <a href="/about">About</a>
-        </header>
+        <div class="fixed-header">
+            <div class="container">
+                <nav>
+                    <a href="/">Matt Prindible</a>
+                    <a href="/about">About</a>
+                </nav>
+            </div>
+        </div>
         {{ content | safe }}
         <footer>
             <p>Footer here</p>

@@ -1,5 +1,5 @@
 ---
-title: Footer
+title: About
 layout: root.liquid
 ---
 
