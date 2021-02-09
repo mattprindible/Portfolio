@@ -13,7 +13,12 @@ layout: root.liquid
 - [{{ writing.data.title }}]({{ writing.url }})
 {% endfor %}
 
-## Airtable
+## [Currently Reading](https://airtable.com/shrujTwAp0e7xcc12)
 {% for item in all %}
-- {{item.title}}
+- [{{ item.Title }} by {{ item.Author }}]({{ item.Bookshop }})
+{% for cover in item.Cover %}
+    {%- for thumb in cover.thumbnails.small.url %}
+    [![Cover]({{ thumb }})]({{ item.Bookshop }})
+    {% endfor %}
+{% endfor %}
 {% endfor %}
