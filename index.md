@@ -13,7 +13,7 @@ layout: root.liquid
 - [{{ writing.data.title }}]({{ writing.url }})
 {% endfor %}
 
-## External Data
-{% for sample in samples %}
-- {{ sample.type }}, {{ sample.size }}
+## Airtable
+{% for item in all %}
+- {{item.title}}
 {% endfor %}
