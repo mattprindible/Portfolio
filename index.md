@@ -14,11 +14,12 @@ layout: root.liquid
 {% endfor %}
 
 ## [Currently Reading](https://airtable.com/shrujTwAp0e7xcc12)
-{% for item in all %}
-- [{{ item.Title }} by {{ item.Author }}]({{ item.Bookshop }})
+{% for item in currentbook %}
+- [{{ item.Title }} by {{ item.Author }}]({{ item.Buy }})
 {% for cover in item.Cover %}
-    {%- for thumb in cover.thumbnails.small.url %}
-    [![Cover]({{ thumb }})]({{ item.Bookshop }})
+    {%- for thumb in cover.thumbnails.small.url -%}
+    [![Book cover for {{ item.Title }} by {{ item.Author }}]({{ thumb }})]({{ item.Buy }})
     {% endfor %}
 {% endfor %}
 {% endfor %}
+- All books
