@@ -22,4 +22,4 @@ layout: root.liquid
     {% endfor %}
 {% endfor %}
 {% endfor %}
-- All books
+- [All books](/library)
