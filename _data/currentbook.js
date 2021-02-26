@@ -7,7 +7,7 @@ module.exports = () => {
     return new Promise((resolve, reject) => {
         const allData = [];
         base('Books')
-            .select({ view: 'Current' })
+            .select({ view: 'Reading' })
             .eachPage(
                 function page(records, fetchNextPage) {
                     records.forEach((record) => {

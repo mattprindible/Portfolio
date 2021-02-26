@@ -2,7 +2,7 @@
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
-    <title>Matt Prindible: Home</title>
+    <title>Matt Prindible: Books</title>
     <style>
         @font-face {
             font-family: 'Atlas Grotesk';
@@ -10,6 +10,7 @@
         }
         body{
             font-family: 'Atlas Grotesk';
+            font-size: 1em;
             background-color: #f7fafc;
             color: #202932;
         }
@@ -22,26 +23,27 @@
         }
 
         p{
-            margin: 0;
+            width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div>
-            <p>Matt Prindible</p>
+            <p>All Books</p>
         </div>
         <div>
-            <p>Projects</p>
-            <p>Sketches</p>
-            <p>About</p>
+            {% for book in all %}
+                <p>{{ book.title_pretty_short }}</p>
+            {% endfor %}
         </div>
-        <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, sint?</p>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio cupiditate maxime consectetur labore consequuntur, modi laborum porro nobis tenetur iste amet veniam, ea beatae!</p>
-        </div>
+        <div>{% for book in all %}
+            <p>{{ book.author }}</p>
+        {% endfor %}</div>
+        <div></div>
     </div>
 </body>
 </html>

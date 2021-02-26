@@ -4,5 +4,5 @@ layout: root.liquid
 ---
 
 {% for book in all %}
-- [{{ book.Title }}]({{ book.Buy }})
+- {{ book.title_pretty }}, {{ book.author }}
 {% endfor %}
